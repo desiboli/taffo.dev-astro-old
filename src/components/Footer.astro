@@ -1,5 +1,5 @@
 ---
-import { Button } from "@/components/ui/button"
+import { ButtonLink } from "@/components/ButtonLink"
 
 const today = new Date()
 ---
@@ -11,27 +11,35 @@ const today = new Date()
     free to reach out.
   </p>
   <div class="flex gap-4">
-    <Button>Contact Me</Button>
-    <Button variant="secondary">Book a call</Button>
+    <ButtonLink href="mailto:adam.benals@gmail.com">Contact Me</ButtonLink>
+    <!-- <Button variant="secondary">Book a call</Button> -->
   </div>
 
   <div class="py-10">
     <p class="mb-4">You can also find me on</p>
 
     <div class="flex gap-4">
-      <a href="https://m.webtoo.ls/@astro" target="_blank" class="underline">
+      <a href="https://x.com/AdamAlshammaa" target="_blank" class="underline">
         <span class="sr-only">Follow me on X</span>
         Twitter X
       </a>
-      <a href="https://m.webtoo.ls/@astro" target="_blank" class="underline">
+      <a
+        href="https://www.linkedin.com/in/mustafa-alshammaa/"
+        target="_blank"
+        class="underline"
+      >
         <span class="sr-only">Follow me on LinkedIn</span>
         LinkedIn
       </a>
-      <a href="https://m.webtoo.ls/@astro" target="_blank" class="underline">
+      <a href="https://github.com/desiboli" target="_blank" class="underline">
         <span class="sr-only">Follow me on Github</span>
         Github
       </a>
-      <a href="https://m.webtoo.ls/@astro" target="_blank" class="underline">
+      <a
+        href="https://www.instagram.com/taaffo/"
+        target="_blank"
+        class="underline"
+      >
         <span class="sr-only">Follow me on Instagram</span>
         Instagram
       </a>

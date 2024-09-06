@@ -21,6 +21,7 @@ const Testimonials = [
     role: "Product Manager",
     company: "Tele 2",
     image: jenny.src,
+    cite: "",
   },
   {
     recommendation:
@@ -29,6 +30,7 @@ const Testimonials = [
     role: "Founder | Advisor | Investor",
     company: "Bridgeblock Capital",
     image: erik.src,
+    cite: "",
   },
   {
     recommendation:
@@ -37,6 +39,7 @@ const Testimonials = [
     company: "RCO Security",
     role: "Tech Lead",
     image: hafijur.src,
+    cite: "",
   },
   {
     recommendation:
@@ -45,6 +48,7 @@ const Testimonials = [
     role: "Founder | Advisor | Investor",
     company: "",
     image: erik.src,
+    cite: "",
   },
 ]
 
@@ -65,7 +69,9 @@ export function TestimonialCarousel() {
             className="min-w-0 flex-grow-0 flex-shrink-0 basis-auto"
           >
             <div className="bg-gray-50 p-10 max-w-lg rounded-3xl">
-              <blockquote>{testimonial.recommendation}</blockquote>
+              <blockquote cite={testimonial.cite} className="">
+                <p className="italic leading-6">{testimonial.recommendation}</p>
+              </blockquote>
 
               <div className="mt-10 flex items-center gap-4">
                 <img
@@ -77,10 +83,10 @@ export function TestimonialCarousel() {
                   loading="eager"
                 />
                 <div className="flex flex-col">
-                  <span>{testimonial.name}</span>
-                  <span className="opacity-70">
+                  <p>{testimonial.name}</p>
+                  <cite className="opacity-70">
                     {testimonial.role}, {testimonial.company}
-                  </span>
+                  </cite>
                 </div>
               </div>
             </div>

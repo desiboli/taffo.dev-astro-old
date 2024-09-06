@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
-import { Button } from "@/components/ui/button"
+import { ButtonLink } from "@/components/ButtonLink"
 import { Badge } from "@/components/ui/badge"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import { PhotoIconHoverCard } from "@/components/PhotoIconHoverCard"
@@ -15,6 +15,8 @@ const items: Array<string> = [
   "UX Design",
   "UI Design",
   "Project Management",
+  "Agile",
+  "Scrum Master",
   "HTML",
   "CSS",
   "Javascript",
@@ -84,7 +86,9 @@ const items: Array<string> = [
           </span>
         </div>
 
-        <Button>Contact Me</Button>
+        <ButtonLink href="mailto:adam.benals@gmail.com">
+          Contact Me
+        </ButtonLink>
       </div>
     </section>
 
@@ -133,7 +137,7 @@ const items: Array<string> = [
           </div>
         </div>
 
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-4 mt-6">
           {items.map((item) => <Badge>{item}</Badge>)}
         </div>
       </div>
