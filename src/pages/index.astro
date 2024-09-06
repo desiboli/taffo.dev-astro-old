@@ -9,6 +9,11 @@ import BaseLayout from "@/layouts/BaseLayout.astro"
 import { PhotoIconHoverCard } from "@/components/PhotoIconHoverCard"
 import { Image } from "astro:assets"
 import portrait from "../assets/images/portrait.jpg"
+import rcoLogo from "../assets/logos/rco-white.svg"
+import unionenLogo from "../assets/logos/unionen.svg"
+import stLogo from "../assets/logos/st.svg"
+import stadsmissionenLogo from "../assets/logos/stadsmissionen.svg"
+import ingmarbergmanLogo from "../assets/logos/ingmarbergman.svg"
 import { TestimonialCarousel } from "@/components/TestimonialCarousel"
 
 const items: Array<string> = [
@@ -139,6 +144,55 @@ const items: Array<string> = [
 
         <div class="flex flex-wrap gap-4 mt-6">
           {items.map((item) => <Badge>{item}</Badge>)}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="flex justify-between text-xs uppercase">
+          <h2>Selected Projects</h2>
+          <a href="/projects" class="underline hover:no-underline">See all</a>
+        </div>
+
+        <div class="w-full py-4">
+          <div
+            class="bg-rcoBlue p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={rcoLogo} alt="" />
+          </div>
+        </div>
+
+        <div class="w-full py-4">
+          <div
+            class="bg-unionenGreen p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={unionenLogo} alt="" />
+          </div>
+        </div>
+
+        <div class="w-full py-4">
+          <div
+            class="bg-stBlue p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={stLogo} alt="" />
+          </div>
+        </div>
+
+        <div class="w-full py-4">
+          <div
+            class="bg-stadsmissionenOrange p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={stadsmissionenLogo} alt="" />
+          </div>
+        </div>
+
+        <div class="w-full py-4">
+          <div
+            class="bg-ingmarPink p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={ingmarbergmanLogo} alt="" />
+          </div>
         </div>
       </div>
     </section>

@@ -20,6 +20,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        rcoBlue: "#003B49",
+        unionenGreen: "#17A624",
+        stBlue: "#289CD7",
+        stadsmissionenOrange: "#EE7F00",
+        ingmarPink: "#FF5E5E",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
