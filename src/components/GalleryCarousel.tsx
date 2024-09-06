@@ -38,7 +38,7 @@ export function GalleryCarousel() {
           stopOnFocusIn: false,
         }),
       ]}
-      className="max-w-7xl mx-auto py-10"
+      className="max-w-7xl mx-auto py-10 carousel"
     >
       <CarouselContent className="touch-pan-y touch-pinch-zoom">
         {gallery.map((item, index) => (

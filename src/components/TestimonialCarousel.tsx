@@ -60,8 +60,9 @@ export function TestimonialCarousel() {
         loop: true,
       }}
       plugins={[AutoScroll({ playOnInit: true, stopOnInteraction: false })]}
-      className="w-full"
+      className="w-full carousel"
     >
+      {/* <div className="w-20 h-full absolute left-0 top-0 bg-gradient-to-r from-white to-white/70 z-10"></div> */}
       <CarouselContent className="touch-pan-y touch-pinch-zoom">
         {Testimonials.map((testimonial, index) => (
           <CarouselItem

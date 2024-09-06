@@ -75,4 +75,13 @@
   .main-nav-links a:not(.active) {
     @apply opacity-60;
   }
+  .carousel {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 10%,
+      rgb(0, 0, 0) 90%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }
