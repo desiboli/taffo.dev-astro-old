@@ -69,7 +69,7 @@ export function TestimonialCarousel() {
             key={index}
             className="min-w-0 flex-grow-0 flex-shrink-0 basis-auto"
           >
-            <div className="bg-gray-50 p-10 max-w-lg rounded-3xl">
+            <div className="bg-gray-50 dark:bg-neutral-900 p-10 max-w-lg rounded-3xl">
               <blockquote cite={testimonial.cite} className="">
                 <p className="italic leading-6">{testimonial.recommendation}</p>
               </blockquote>

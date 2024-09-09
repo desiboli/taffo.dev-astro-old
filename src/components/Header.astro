@@ -2,6 +2,7 @@
 import HeaderLink from "./HeaderLink.astro"
 import { SITE_TITLE } from "../consts"
 import { Image } from "astro:assets"
+import { ModeToggle } from "./ModeToggle"
 ---
 
 <header class="py-20">
@@ -15,11 +16,12 @@ import { Image } from "astro:assets"
         loading="eager"
       />
     </a>
-    <div class="main-nav-links">
+    <div class="main-nav-links flex gap-4 items-center">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
       <!-- <HeaderLink href="/blog">Writing</HeaderLink> -->
+      <ModeToggle client:load />
     </div>
   </nav>
 </header>

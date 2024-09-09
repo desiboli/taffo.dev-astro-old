@@ -1,5 +1,6 @@
 ---
 import { ButtonLink } from "@/components/ButtonLink"
+import { ModeToggle } from "./ModeToggle"
 
 const today = new Date()
 ---
@@ -10,9 +11,10 @@ const today = new Date()
     Whether you have a project in mind, a question, or just want to say hi, feel
     free to reach out.
   </p>
-  <div class="flex gap-4">
+  <div class="flex gap-4 justify-between">
     <ButtonLink href="mailto:adam.benals@gmail.com">Contact Me</ButtonLink>
     <!-- <Button variant="secondary">Book a call</Button> -->
+    <ModeToggle client:load />
   </div>
 
   <div class="py-10">
