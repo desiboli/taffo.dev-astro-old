@@ -1,70 +1,39 @@
 ---
 import HeaderLink from "./HeaderLink.astro"
-import { SITE_TITLE } from "../consts"
-import { Image } from "astro:assets"
 import { ModeToggle } from "./ModeToggle"
 ---
 
 <header class="py-20">
   <nav class="container flex justify-between px-8">
     <a href="/">
-      <Image
-        id="logo"
-        src="/logo.svg"
-        alt="A bird sitting on a nest of eggs."
-        width="40"
-        height="40"
-        loading="eager"
-      />
+      <svg
+        width="34"
+        height="24"
+        viewBox="0 0 34 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          width="10"
+          height="24"
+          rx="4"
+          class="fill-current text-gray-800 dark:text-white"></rect>
+        <rect
+          x="12"
+          width="10"
+          height="24"
+          rx="4"
+          class="fill-current text-gray-800 dark:text-white"></rect>
+        <path
+          d="M24 0.740742C24 0.331642 24.3316 0 24.7407 0V0C29.8545 0 34 4.14551 34 9.25926V22.2222C34 23.2041 33.2041 24 32.2222 24H29C28.0707 24 27.606 24 27.2196 23.9231C25.6329 23.6075 24.3925 22.3671 24.0769 20.7804C24 20.394 24 19.9293 24 19V0.740742Z"
+          class="fill-current text-orange-400"></path>
+      </svg>
     </a>
     <div class="main-nav-links flex gap-4 items-center">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
-      <!-- <HeaderLink href="/blog">Writing</HeaderLink> -->
       <ModeToggle client:load />
     </div>
   </nav>
 </header>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const logo = document.getElementById("logo") as HTMLImageElement
-    const htmlElement = document.documentElement
-    const currentTheme = localStorage.getItem("theme") || "light"
-
-    const setLogoBasedOnTheme = (theme: string) => {
-      logo.src = theme === "dark" ? "/logo-white.svg" : "/logo.svg"
-    }
-
-    // Initial logo setup based on stored theme or system preference
-    setLogoBasedOnTheme(currentTheme)
-
-    // Listen for system theme changes (prefers-color-scheme)
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        setLogoBasedOnTheme(e.matches ? "dark" : "light")
-      })
-
-    // Function to check and update theme based on <html> class
-    const updateLogoBasedOnHtmlClass = () => {
-      const theme = htmlElement.classList.contains("dark") ? "dark" : "light"
-      setLogoBasedOnTheme(theme)
-    }
-
-    // MutationObserver to watch for class changes on the <html> element
-    const observer = new MutationObserver(() => {
-      updateLogoBasedOnHtmlClass()
-    })
-
-    observer.observe(htmlElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    })
-
-    // Handle theme toggle click (if a toggle button exists)
-    const modeToggle = document.querySelector(".mode-toggle")
-    modeToggle?.addEventListener("click", updateLogoBasedOnHtmlClass)
-  })
-</script>
