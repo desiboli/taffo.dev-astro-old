@@ -9,9 +9,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import jenny from "../assets/images/jenny.jpg"
-import erik from "../assets/images/erik.jpg"
-import hafijur from "../assets/images/hafijur.jpg"
+import jenny from "@/assets/images/jenny.webp"
+import erik from "@/assets/images/erik.webp"
+import hafijur from "@/assets/images/hafijur.webp"
 
 const Testimonials = [
   {
@@ -78,7 +78,7 @@ export function TestimonialCarousel() {
                 <img
                   className="rounded-full"
                   src={testimonial.image}
-                  alt="A bird sitting on a nest of eggs."
+                  alt={testimonial.name}
                   width="80"
                   height="80"
                   loading="eager"

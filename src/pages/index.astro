@@ -1,19 +1,15 @@
 ---
-import BaseHead from "../components/BaseHead.astro"
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
 import { ButtonLink } from "@/components/ButtonLink"
 import { Badge } from "@/components/ui/badge"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import { PhotoIconHoverCard } from "@/components/PhotoIconHoverCard"
 import { Image } from "astro:assets"
-import portrait from "../assets/images/portrait.jpg"
-import rcoLogo from "../assets/logos/rco-white.svg"
-import unionenLogo from "../assets/logos/unionen.svg"
-import stLogo from "../assets/logos/st.svg"
-import stadsmissionenLogo from "../assets/logos/stadsmissionen.svg"
-import ingmarbergmanLogo from "../assets/logos/ingmarbergman.svg"
+import portrait from "@/assets/images/portrait.webp"
+import rcoLogo from "@/assets/logos/rco-white.svg"
+import unionenLogo from "@/assets/logos/unionen.svg"
+import stLogo from "@/assets/logos/st.svg"
+import stadsmissionenLogo from "@/assets/logos/stadsmissionen.svg"
+import ingmarbergmanLogo from "@/assets/logos/ingmarbergman.svg"
 import { TestimonialCarousel } from "@/components/TestimonialCarousel"
 
 const items: Array<string> = [
@@ -235,7 +231,7 @@ const items: Array<string> = [
           <div
             class="bg-rcoBlue hover:bg-rcoBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
           >
-            <Image src={rcoLogo} alt="" />
+            <Image src={rcoLogo} alt="RCO Logo" />
           </div>
         </a>
 
@@ -243,7 +239,7 @@ const items: Array<string> = [
           <div
             class="bg-unionenGreen hover:bg-unionenGreen/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
           >
-            <Image src={unionenLogo} alt="" />
+            <Image src={unionenLogo} alt="Unionen Logo" />
           </div>
         </a>
 
@@ -251,7 +247,7 @@ const items: Array<string> = [
           <div
             class="bg-stBlue hover:bg-stBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
           >
-            <Image src={stLogo} alt="" />
+            <Image src={stLogo} alt="ST Logo" />
           </div>
         </a>
 
@@ -259,7 +255,10 @@ const items: Array<string> = [
           <div
             class="bg-stadsmissionenOrange hover:bg-stadsmissionenOrange/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
           >
-            <Image src={stadsmissionenLogo} alt="" />
+            <Image
+              src={stadsmissionenLogo}
+              alt="Stockholms Stadsmission Logo"
+            />
           </div>
         </a>
 
@@ -267,7 +266,10 @@ const items: Array<string> = [
           <div
             class="bg-ingmarPink hover:bg-ingmarPink/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
           >
-            <Image src={ingmarbergmanLogo} alt="" />
+            <Image
+              src={ingmarbergmanLogo}
+              alt="Ingmar Bergman Foundation Logo"
+            />
           </div>
         </a>
       </div>
