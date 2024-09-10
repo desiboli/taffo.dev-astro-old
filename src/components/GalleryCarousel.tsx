@@ -9,11 +9,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import portrait from "../assets/images/portrait.jpg"
-import portrait2 from "../assets/images/portrait2.jpg"
-import portrait3 from "../assets/images/portrait3.jpg"
-import portrait4 from "../assets/images/portrait4.jpg"
-import portrait5 from "../assets/images/portrait5.jpg"
+import portrait from "@/assets/images/portrait.webp"
+import portrait2 from "@/assets/images/portrait2.webp"
+import portrait3 from "@/assets/images/portrait3.webp"
+import portrait4 from "@/assets/images/portrait4.webp"
+import portrait5 from "@/assets/images/portrait5.webp"
 
 const gallery = [
   portrait.src,
@@ -40,13 +40,13 @@ export function GalleryCarousel() {
       ]}
       className="max-w-7xl mx-auto py-10 carousel"
     >
-      <CarouselContent className="touch-pan-y touch-pinch-zoom">
+      <CarouselContent className="touch-pan-y touch-pinch-zoom ove">
         {gallery.map((item, index) => (
           <CarouselItem
             key={index}
-            className="min-w-0 flex-grow-0 flex-shrink-0 basis-auto"
+            className="min-w-0 flex-grow-0 flex-shrink-0 basis-auto overflow-hidden"
           >
-            <img src={item} alt="A starry night sky." />
+            <img src={item} alt="A starry night sky." className="rounded-3xl" />
           </CarouselItem>
         ))}
       </CarouselContent>
