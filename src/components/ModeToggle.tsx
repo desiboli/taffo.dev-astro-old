@@ -1,6 +1,3 @@
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { cn } from "@/lib/utils"
 import {
   LaptopIcon,
   MoonIcon,
@@ -17,7 +14,6 @@ export function ModeToggle() {
   >("theme-light")
 
   React.useEffect(() => {
-    console.log("theme", theme)
     const isDarkMode = document.documentElement.classList.contains("dark")
     setThemeState(isDarkMode ? "dark" : "theme-light")
   }, [])
@@ -37,9 +33,10 @@ export function ModeToggle() {
       onClick={() =>
         setThemeState(theme === "theme-light" ? "dark" : "theme-light")
       }
+      className="mode-toggle"
     >
       <SunIcon className="h-[1.5rem] w-[1.3rem] dark:hidden" />
-      <MoonIcon className="hidden h-5 w-5 dark:block" />
+      <MoonStarIcon className="hidden h-5 w-5 dark:block" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   )
