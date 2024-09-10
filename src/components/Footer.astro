@@ -5,47 +5,49 @@ import { ModeToggle } from "./ModeToggle"
 const today = new Date()
 ---
 
-<footer class="max-w-xl mx-auto space-y-10 px-8 py-40">
-  <h3 class="font-bold uppercase">Let's connect</h3>
-  <p>
-    Whether you have a project in mind, a question, or just want to say hi, feel
-    free to reach out.
-  </p>
-  <div class="flex gap-4 justify-between">
-    <ButtonLink href="mailto:adam.benals@gmail.com">Contact Me</ButtonLink>
-    <!-- <Button variant="secondary">Book a call</Button> -->
-    <ModeToggle client:load />
-  </div>
-
-  <div class="py-10">
-    <p class="mb-4">You can also find me on</p>
-
-    <div class="flex gap-4">
-      <a href="https://x.com/AdamAlshammaa" target="_blank" class="underline">
-        <span class="sr-only">Follow me on X</span>
-        Twitter X
-      </a>
-      <a
-        href="https://www.linkedin.com/in/mustafa-alshammaa/"
-        target="_blank"
-        class="underline"
-      >
-        <span class="sr-only">Follow me on LinkedIn</span>
-        LinkedIn
-      </a>
-      <a href="https://github.com/desiboli" target="_blank" class="underline">
-        <span class="sr-only">Follow me on Github</span>
-        Github
-      </a>
-      <a
-        href="https://www.instagram.com/taaffo/"
-        target="_blank"
-        class="underline"
-      >
-        <span class="sr-only">Follow me on Instagram</span>
-        Instagram
-      </a>
+<footer class="container py-40">
+  <div class="max-w-prose mx-auto space-y-10">
+    <h3 class="font-bold uppercase">Let's connect</h3>
+    <p>
+      Whether you have a project in mind, a question, or just want to say hi,
+      feel free to reach out.
+    </p>
+    <div class="flex gap-4 justify-between">
+      <ButtonLink href="mailto:adam.benals@gmail.com">Contact Me</ButtonLink>
+      <!-- <Button variant="secondary">Book a call</Button> -->
+      <ModeToggle client:load />
     </div>
+
+    <div class="py-10">
+      <p class="mb-4">You can also find me on</p>
+
+      <div class="flex gap-4">
+        <a href="https://x.com/AdamAlshammaa" target="_blank" class="underline">
+          <span class="sr-only">Follow me on X</span>
+          Twitter X
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mustafa-alshammaa/"
+          target="_blank"
+          class="underline"
+        >
+          <span class="sr-only">Follow me on LinkedIn</span>
+          LinkedIn
+        </a>
+        <a href="https://github.com/desiboli" target="_blank" class="underline">
+          <span class="sr-only">Follow me on Github</span>
+          Github
+        </a>
+        <a
+          href="https://www.instagram.com/taaffo/"
+          target="_blank"
+          class="underline"
+        >
+          <span class="sr-only">Follow me on Instagram</span>
+          Instagram
+        </a>
+      </div>
+    </div>
+    &copy; Copyright {today.getFullYear()} – Mustafa Adam Alshammaa.
   </div>
-  &copy; Copyright {today.getFullYear()} – Mustafa Adam Alshammaa.
 </footer>

@@ -1,0 +1,58 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import { Image } from "astro:assets"
+import rcoLogo from "@/assets/logos/rco-white.svg"
+import unionenLogo from "@/assets/logos/unionen.svg"
+import stLogo from "@/assets/logos/st.svg"
+import stadsmissionenLogo from "@/assets/logos/stadsmissionen.svg"
+import ingmarbergmanLogo from "@/assets/logos/ingmarbergman.svg"
+---
+
+<BaseLayout>
+  <main>
+    <div class="container">
+      <h1 class="text-xs uppercase">Projects</h1>
+      <div class="grid lg:grid-cols-3 gap-4 pt-6">
+        <a href="/projects/rco" class="w-full">
+          <div
+            class="bg-rcoBlue hover:bg-rcoBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={rcoLogo} alt="" />
+          </div>
+        </a>
+
+        <a href="/projects/unionen" class="w-full">
+          <div
+            class="bg-unionenGreen hover:bg-unionenGreen/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={unionenLogo} alt="" />
+          </div>
+        </a>
+
+        <a href="/projects/st" class="w-full">
+          <div
+            class="bg-stBlue hover:bg-stBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={stLogo} alt="" />
+          </div>
+        </a>
+
+        <a href="/projects/stadsmissionen" class="w-full">
+          <div
+            class="bg-stadsmissionenOrange hover:bg-stadsmissionenOrange/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={stadsmissionenLogo} alt="" />
+          </div>
+        </a>
+
+        <a href="/projects/bergman" class="w-full">
+          <div
+            class="bg-ingmarPink hover:bg-ingmarPink/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+          >
+            <Image src={ingmarbergmanLogo} alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
