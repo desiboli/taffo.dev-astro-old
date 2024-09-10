@@ -157,7 +157,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">RCO Security / Dinbox</h4>
+              <h3 class="font-bold uppercase">RCO Security / Dinbox</h3>
               <p>Senior Frontend Developer & UI/UX Designer Consultant</p>
             </div>
             2023 - 2024
@@ -166,7 +166,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">The Stellar Collective</h4>
+              <h3 class="font-bold uppercase">The Stellar Collective</h3>
               <p>Senior Frontend Developer Consultant</p>
             </div>
             Present
@@ -175,7 +175,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">Pluck</h4>
+              <h3 class="font-bold uppercase">Pluck</h3>
               <p>Co-founder</p>
             </div>
             2021 - 2024
@@ -184,7 +184,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">Digitalist Sweden</h4>
+              <h3 class="font-bold uppercase">Digitalist Sweden</h3>
               <p>Frontend Lead & Certified Scrum Master</p>
             </div>
             2018 - 2021
@@ -193,7 +193,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">Wunderkraut</h4>
+              <h3 class="font-bold uppercase">Wunderkraut</h3>
               <p>Frontend Lead & Certified Scrum Master</p>
             </div>
             2017 - 2018
@@ -202,7 +202,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">Bricco</h4>
+              <h3 class="font-bold uppercase">Bricco</h3>
               <p>Fullstack Developer</p>
             </div>
             2013 - 2017
@@ -211,7 +211,7 @@ const items: Array<string> = [
             class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-3xl flex justify-between items-center"
           >
             <div class="space-y-4">
-              <h4 class="font-bold uppercase">River</h4>
+              <h3 class="font-bold uppercase">River</h3>
               <p>Internship</p>
             </div>
             2011 - 2012
@@ -224,54 +224,58 @@ const items: Array<string> = [
       <div class="container">
         <div class="flex justify-between text-xs uppercase">
           <h2>Selected Projects</h2>
-          <a href="/projects" class="underline hover:no-underline">See all</a>
+          <a href="/projects" class="underline hover:no-underline py-2 px-4"
+            >See all</a
+          >
         </div>
 
-        <a href="/projects/rco" class="w-full py-4 block">
-          <div
-            class="bg-rcoBlue hover:bg-rcoBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
-          >
-            <Image src={rcoLogo} alt="RCO Logo" />
-          </div>
-        </a>
+        <div class="flex flex-col space-y-6">
+          <a href="/projects/rco">
+            <div
+              class="bg-rcoBlue hover:bg-rcoBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+            >
+              <Image src={rcoLogo} alt="RCO Logo" />
+            </div>
+          </a>
 
-        <a href="/projects/unionen" class="w-full py-4 block">
-          <div
-            class="bg-unionenGreen hover:bg-unionenGreen/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
-          >
-            <Image src={unionenLogo} alt="Unionen Logo" />
-          </div>
-        </a>
+          <a href="/projects/unionen">
+            <div
+              class="bg-unionenGreen hover:bg-unionenGreen/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+            >
+              <Image src={unionenLogo} alt="Unionen Logo" />
+            </div>
+          </a>
 
-        <a href="/projects/st" class="w-full py-4 block">
-          <div
-            class="bg-stBlue hover:bg-stBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
-          >
-            <Image src={stLogo} alt="ST Logo" />
-          </div>
-        </a>
+          <a href="/projects/st">
+            <div
+              class="bg-stBlue hover:bg-stBlue/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+            >
+              <Image src={stLogo} alt="ST Logo" />
+            </div>
+          </a>
 
-        <a href="/projects/stadsmissionen" class="w-full py-4 block">
-          <div
-            class="bg-stadsmissionenOrange hover:bg-stadsmissionenOrange/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
-          >
-            <Image
-              src={stadsmissionenLogo}
-              alt="Stockholms Stadsmission Logo"
-            />
-          </div>
-        </a>
+          <a href="/projects/stadsmissionen">
+            <div
+              class="bg-stadsmissionenOrange hover:bg-stadsmissionenOrange/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+            >
+              <Image
+                src={stadsmissionenLogo}
+                alt="Stockholms Stadsmission Logo"
+              />
+            </div>
+          </a>
 
-        <a href="/projects/bergman" class="w-full py-4 block">
-          <div
-            class="bg-ingmarPink hover:bg-ingmarPink/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
-          >
-            <Image
-              src={ingmarbergmanLogo}
-              alt="Ingmar Bergman Foundation Logo"
-            />
-          </div>
-        </a>
+          <a href="/projects/bergman">
+            <div
+              class="bg-ingmarPink hover:bg-ingmarPink/90 p-6 space-y-4 rounded-3xl min-h-80 flex items-center justify-center"
+            >
+              <Image
+                src={ingmarbergmanLogo}
+                alt="Ingmar Bergman Foundation Logo"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   </main>
