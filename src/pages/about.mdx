@@ -3,6 +3,7 @@ import Prose from "../components/Prose.astro"
 import { GalleryCarousel } from "../components/GalleryCarousel"
 
 <BaseLayout>
+<div className="container">
   <Prose>
 # About Me
 I am a seasoned developer with over a decade of experience in crafting digital solutions that marry functionality with aesthetics seamlessly. My journey in the tech world has been marked by milestones that reflect my passion for innovation and my commitment to excellence.
@@ -14,9 +15,11 @@ Beyond the digital realm, I have a lifelong passion for soccer, having played th
 I am excited about the future possibilities in technology and eager to contribute my expertise and enthusiasm to projects that push boundaries and make a lasting impact. Let's connect and explore how we can innovate and excel together.
 
   </Prose>
-
+</div>
 <GalleryCarousel client:load />
   
+  <div className="container">
+
   <Prose>
 I co-founded Pluck, an innovative esports platform designed to empower teams by providing tools to track, rank, and compete with players effectively. This venture not only honed my entrepreneurial skills but also deepened my understanding of the gaming industry and its evolving dynamics.
 
@@ -25,4 +28,5 @@ My personal journey also saw significant milestones as I welcomed my first child
 Outside of work, you can find me immersed in gaming adventures or passionately coding hobby projects that fuel my creativity. Quality time with family is also a cherished priority during my leisure moments, enriching my life with joy and fulfillment.
 
   </Prose>
+  </div>
 </BaseLayout>
