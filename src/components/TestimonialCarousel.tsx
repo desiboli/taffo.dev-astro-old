@@ -12,11 +12,12 @@ import {
 import jenny from "@/assets/images/jenny.webp"
 import erik from "@/assets/images/erik.webp"
 import hafijur from "@/assets/images/hafijur.webp"
+import jonas from "@/assets/images/jonas.webp"
 
 const Testimonials = [
   {
     recommendation:
-      "“Mustafa is an experienced developer with leadership instinct and commitment and also very fun to work with.”",
+      "“Mustafa is an experienced developer with a strong sense of leadership and commitment. He’s a pleasure to work with, always bringing positive energy and a collaborative attitude to the team.”",
     name: "Jenny Hall",
     role: "Product Manager",
     company: "Tele 2",
@@ -25,7 +26,7 @@ const Testimonials = [
   },
   {
     recommendation:
-      "“What sets Mustafa apart from other Front-end Developers is his passion for his work. He is always looking for ways to improve his skills and knowledge, and his drive to stay ahead of the curve is evident in the quality of his work. He is not only highly skilled but also very reliable and takes pride in delivering projects on time and within budget.”",
+      "“What sets Mustafa apart is his passion for frontend development. He continually strives to improve his skills and delivers projects reliably, on time, and within budget, showing his dedication and high level of expertise.”",
     name: "Erik Lydecker",
     role: "Founder | Advisor | Investor",
     company: "Bridgeblock Capital",
@@ -34,7 +35,7 @@ const Testimonials = [
   },
   {
     recommendation:
-      "“I had the pleasure of working closely with Mustafa during his work at the Dinbox. I can confidently say that he is one of the most talented and dedicated frontend developers I’ve ever had the opportunity to work with. Mustafa consistently demonstrated a deep understanding of frontend technologies. His attention to detail is impeccable, and he has a natural ability to turn complex design concepts into intuitive, user-friendly interfaces. He has a keen eye for design and a thorough understanding of UX principles. He tackles challenges with creativity and always finding innovative solutions to ensure that the end product not only meets but exceeds expectations. Beyond his technical skills, Mustafa is an exceptional team player and a top-tier frontend developer who would be an asset to any team. I highly recommend Mustafa for any role where frontend expertise, creativity, and a collaborative spirit are valued.”",
+      "“I worked closely with Mustafa and can say that he’s one of the most talented frontend developers I’ve encountered. His attention to detail, creative problem-solving, and ability to transform designs into user-friendly interfaces make him a key asset to any team.”",
     name: "Mohammad Hafijur Rahman",
     company: "RCO Security",
     role: "Tech Lead",
@@ -43,11 +44,11 @@ const Testimonials = [
   },
   {
     recommendation:
-      "“What sets Mustafa apart from other Front-end Developers is his passion for his work. He is always looking for ways to improve his skills and knowledge, and his drive to stay ahead of the curve is evident in the quality of his work. He is not only highly skilled but also very reliable and takes pride in delivering projects on time and within budget.”",
-    name: "Erik Lydecker",
-    role: "Founder | Advisor | Investor",
+      "“I worked with Musse for over a year and highly recommend him. He has a deep interest in design and always brings positive energy to the team. He’s responsible, ensures timely implementation, and is a pleasure to work with.”",
+    name: "Jonas Fornander",
+    role: "Technical Project Manager",
     company: "",
-    image: erik.src,
+    image: jonas.src,
     cite: "",
   },
 ]
@@ -79,8 +80,8 @@ export function TestimonialCarousel() {
                   className="rounded-full"
                   src={testimonial.image}
                   alt={testimonial.name}
-                  width="80"
-                  height="80"
+                  width="50"
+                  height="50"
                   loading="eager"
                 />
                 <div className="flex flex-col">
