@@ -16,11 +16,11 @@ import portrait4 from "@/assets/images/portrait4.webp"
 import portrait5 from "@/assets/images/portrait5.webp"
 
 const gallery = [
-  portrait.src,
-  portrait2.src,
-  portrait3.src,
-  portrait4.src,
-  portrait5.src,
+  { image: portrait.src, alt: "Me and my son." },
+  { image: portrait2.src, alt: "My family under a tree." },
+  { image: portrait3.src, alt: "Me and my pregnant girlfriend." },
+  { image: portrait4.src, alt: "Me and my sister." },
+  { image: portrait5.src, alt: "Me and my pregnant girlfriend." },
 ]
 
 export function GalleryCarousel() {
@@ -46,7 +46,7 @@ export function GalleryCarousel() {
             key={index}
             className="min-w-0 flex-grow-0 flex-shrink-0 basis-auto overflow-hidden"
           >
-            <img src={item} alt="A starry night sky." className="rounded-3xl" />
+            <img src={item.image} alt={item.alt} className="rounded-3xl" />
           </CarouselItem>
         ))}
       </CarouselContent>
